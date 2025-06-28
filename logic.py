@@ -29,7 +29,7 @@ class Pokemon:
         response = requests.get(url)
         if response.status_code == 200:
             data = response.json()  
-            return (data["sprites"]["other"]["dream_world"]["front_default"])    
+            return (data['sprites']["other"]['official-artwork']["front_default"])
         else:
             return "https://i.pinimg.com/originals/b9/c7/c5/b9c7c50da1fc0b8c97b9c75eee2603a2.png"
         
